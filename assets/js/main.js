@@ -1901,8 +1901,8 @@
         }
 
         //page preloader
-        $(".preloaderimg").fadeOut(150);
-        $(".preloader").fadeOut(150).delay(50, function() {
+        $(".preloaderimg").fadeOut(1500);
+        $(".preloader").fadeOut(1500).delay(1500, function() {
             $(this).remove();
         });
     } //eof windowLoadInit

@@ -3430,7 +3430,7 @@ a.pswp__share--download:hover {
     top: 0;
     transition: opacity .25s ease-out;
     width: 44px;
-    will-change: opacity
+    will-change: opacity;
 }
 
 .pswp__preloader__icn {
@@ -7887,13 +7887,15 @@ img {
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 13000
+    z-index: 13000;
+    backdrop-filter: blur(15px);
 }
 
 .no-js .preloader,
 .lt-ie9 .preloader,
 .lt-ie10 .preloader {
-    display: none
+    display: none;
+
 }
 
 .preloader_image {
@@ -7901,6 +7903,7 @@ img {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    filter: drop-shadow(0 0 10px #efce6a);
     height: 256px;
     left: 50%;
     margin: -128px 0 0 -128px;
