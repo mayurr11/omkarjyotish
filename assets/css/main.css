@@ -7897,8 +7897,9 @@ img {
 }
 
 .preloader_image {
-    background-image: url(../img/preloader.png);
+    background-image: url(../imgs/logo.png);
     background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 256px;
     left: 50%;
@@ -18660,7 +18661,12 @@ a.logo {
 
 a.logo img {
     display: inline-block;
-    max-height: 50px
+    max-height: 90px
+}
+
+footer.page_footer  a.logo img {
+    display: inline-block;
+    max-height: 150px
 }
 
 a.logo .logo-text {
