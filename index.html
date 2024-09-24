@@ -21,155 +21,29 @@
         <div class="preloader_image pulse"></div>
     </div>
 
-    <!-- search modal -->
-    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-        <div class="widget widget_search">
-            <form method="get" class="searchform search-form" action="/">
-                <div class="form-group">
-                    <input type="text" value="" name="search" class="form-control" placeholder="Search keyword"
-                        id="modal-search-input">
-                </div>
-                <button type="submit" class="btn">Search</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Unyson messages modal -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
-        <div class="fw-messages-wrap ls p-normal">
-            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
-            <!--
-		<ul class="list-unstyled">
-			<li>Message To User</li>
-		</ul>
-		-->
-
-        </div>
-    </div>
-    <!-- eof .modal -->
-
-    <div class="modal fade popupLogin" id="popupLogin" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content ds bs box-shadow bordered overflow-visible s-overlay s-mobile-overlay">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h4 class="color-main2 mb-3">Log in</h4>
-                                <form class="form-registration c-mb-20 c-gutter-20" action="/">
-                                    <div class="row mb-4">
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <input type="text" name="name" class="form-control" required
-                                                    placeholder="login" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="form-group">
-                                                <input type="password" name="password" class="form-control"
-                                                    placeholder="password" aria-required="true" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a class="registerRedirect " data-dismiss="modal" data-target="#popupRegistr"
-                                        data-toggle="modal" href="#">Not a member? Register!</a>
-                                    <button type="submit" class="btn btn-maincolor mt-30 d-block">Sign In</button>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade popupRegistr" id="popupRegistr" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content ds bs box-shadow bordered overflow-visible s-overlay s-mobile-overlay">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="modal-body">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h4 class="color-main2 mb-4">Registration</h4>
-                                <form class="form-registration c-mb-20 c-gutter-20" method="post" action="/">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="text" name="name" class="form-control" required
-                                                    placeholder="login" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="password" name="password" class="form-control"
-                                                    placeholder="password" aria-required="true" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="email" name="email" class="form-control"
-                                                    placeholder="email" required aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="password" name="confirmPassword" class="form-control"
-                                                    placeholder="password" required aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="checkbox" id="agreed" name="agreed" value="agreed" required
-                                                    aria-required="true"><label for="agreed">I agree to the
-                                                    rules</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-maincolor mt-30 d-block">Registration</button>
-                                </form>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- wrappers for visual page editor and boxed version of template -->
     <div id="canvas">
         <div id="box_wrapper">
 
-            <!-- template sections -->
-
+            <!-- root -->
             <div class="header_absolute ">
 
-                <!--topline section visible only on small screens|-->
+                <!--topline section-->
                 <section class="page_topline ds s-py-30 ">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-4 col-md-4 text-lg-left text-center">
                                 <a href="./" class="logo">
                                     <img src="assets/imgs/logo.png" alt="img">
-                                    <!-- <span class="logo-text color-darkgrey">vedi</span> -->
                                 </a>
                             </div>
                             <div
                                 class="col-xl-6 col-lg-8 col-md-8 some-links text-center text-lg-right d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
                                 <a class="fs-24 links-maincolor-hover font-2" href="tel:+918000583939"><mark>+91</mark>
-                                    
+
                                     80005 83939</a>
-                                <a href="tel:+918000583939" class="btn btn-outline-maincolor btn-medium  d-none d-md-block">
+                                <a href="tel:+918000583939"
+                                    class="btn btn-outline-maincolor btn-medium  d-none d-md-block">
                                     Consult Now
                                 </a>
                             </div>
@@ -178,7 +52,7 @@
                 </section>
                 <!--eof topline-->
 
-                <!-- header with two Bootstrap columns - left for logo and right for navigation and includes (search, social icons, additional links and buttons etc -->
+                <!-- header  -->
                 <header class="page_header ds ms s-overlay justify-nav-start">
                     <div class="container">
                         <div class="row align-items-center">
@@ -192,16 +66,16 @@
                                                 <a href="/">Home</a>
                                             </li>
                                             <li class="active">
-                                                <a href="/">About me</a>
+                                                <a href="#about">About me</a>
                                             </li>
                                             <li class="active">
-                                                <a href="/">Services</a>
+                                                <a href="#services">Services</a>
                                             </li>
                                             <li class="active">
-                                                <a href="/">Client Reviews</a>
+                                                <a href="#client-reviews">Client Reviews</a>
                                             </li>
                                             <li class="active">
-                                                <a href="/">Blogs</a>
+                                                <a href="#blog">Blog</a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -252,7 +126,7 @@
                                 <span>To Astrology</span>
                             </h3>
                             <div class="divider-35 divider-xl-65"></div>
-                            <a href="about.html" class="btn btn-maincolor">Let’s Begin</a>
+                            <a href="#about" class="btn btn-maincolor">Let’s Begin</a>
                         </div>
                         <div class="col-lg-6 col-xl-7 order-lg-2 order-1 text-center text-lg-right">
                             <img class="horoscope-image" src="assets/images/horoscope.png" alt="img">
@@ -266,7 +140,7 @@
                 <div class="container">
                     <div class="row align-center">
                         <div class="col-lg-6">
-                            <img src="assets/images/about-img.png" alt="img">
+                            <img src="assets/imgs/about-img.png" alt="img">
                         </div>
                         <div class="col-lg-6 text-center text-md-left">
                             <div class="divider-60 divider-lg-0 "></div>
@@ -955,7 +829,7 @@
             </section>
 
             <!-- Section Faqs -->
-            <section id="faq" class="ds s-py-90 s-pt-xl-145 s-pb-xl-130">
+            <section id="client-reviews" class="ds s-py-90 s-pt-xl-145 s-pb-xl-130">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center">
@@ -1331,122 +1205,6 @@
                                 <!-- #post-## -->
                             </div>
                         </div>
-                        <div class="col-12 text-center">
-                            <div class="divider-55 divider-xl-115"></div>
-                            <h3 class="text-center mt-0 mb-2 special-heading fs-60 color-main">
-                                <span>Purchase Monthly Plan</span>
-                            </h3>
-                            <div class="line"></div>
-                            <p class="text-center fs-20 mt-4">
-                                <span>What’s Your Sign? Read Your Daily <br>Horoscope Today</span>
-                            </p>
-
-                            <div class="divider-40 divider-xl-60"></div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="pricing-plan price-layout-1 bg-darkgrey">
-                                <div class="icon-styled fs-50">
-                                    <i class="color-darkgrey ico ico-diamond"></i>
-                                </div>
-                                <div class="plan-name">
-                                    <div class="divider-25"></div>
-                                    <h3 class="mt-0">
-                                        Starter
-                                    </h3>
-                                    <div class="plan-description">
-                                        Starting Business
-                                    </div>
-                                </div>
-                                <div class="plan-features text-center">
-                                    <ul class="list-bordered">
-                                        <li>Ask One Question</li>
-                                        <li>Half-Hour Reading</li>
-                                        <li>Newborn / Child Reading</li>
-                                        <li>Relationship Reading</li>
-                                    </ul>
-                                </div>
-                                <div class="price-wrap">
-                                    <div class="wrapper">
-                                        <span class="plan-sign">$</span>
-                                        <span class="plan-price">25</span>
-                                    </div>
-                                    <span class="plan-decimals text-left">Per <br>Month</span>
-                                </div>
-                                <div class="plan-button">
-                                    <a href="pricing.html" class="btn btn-medium btn-shop">Purchase</a>
-                                </div>
-                            </div>
-                            <div class="divider-60 divider-lg-0"></div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="pricing-plan price-layout-1 cs plan-featured">
-                                <div class="icon-styled fs-50">
-                                    <i class="text-white ico ico-gem"></i>
-                                </div>
-                                <div class="plan-name">
-                                    <div class="divider-25"></div>
-                                    <h3 class="mt-0">
-                                        Pro
-                                    </h3>
-                                    <div class="plan-description">
-                                        Starting Business
-                                    </div>
-                                </div>
-                                <div class="plan-features text-center">
-                                    <ul class="list-bordered">
-                                        <li>Ask One Question</li>
-                                        <li>Half-Hour Reading</li>
-                                        <li>Newborn / Child Reading</li>
-                                        <li>Relationship Reading</li>
-                                    </ul>
-                                </div>
-                                <div class="price-wrap">
-                                    <div class="wrapper">
-                                        <span class="plan-sign">$</span>
-                                        <span class="plan-price">73</span>
-                                    </div>
-                                    <span class="plan-decimals text-left">Per <br>Month</span>
-                                </div>
-                                <div class="plan-button">
-                                    <a href="pricing.html" class="btn btn-medium btn-shop">Purchase</a>
-                                </div>
-                            </div>
-                            <div class="divider-60 divider-lg-0"></div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="pricing-plan price-layout-1 bg-darkgrey">
-                                <div class="icon-styled fs-50">
-                                    <i class="color-darkgrey ico ico-gems"></i>
-                                </div>
-                                <div class="plan-name">
-                                    <div class="divider-25"></div>
-                                    <h3 class="mt-0">
-                                        Business
-                                    </h3>
-                                    <div class="plan-description">
-                                        Starting Business
-                                    </div>
-                                </div>
-                                <div class="plan-features text-center">
-                                    <ul class="list-bordered">
-                                        <li>Ask One Question</li>
-                                        <li>Half-Hour Reading</li>
-                                        <li>Newborn / Child Reading</li>
-                                        <li>Relationship Reading</li>
-                                    </ul>
-                                </div>
-                                <div class="price-wrap">
-                                    <div class="wrapper">
-                                        <span class="plan-sign">$</span>
-                                        <span class="plan-price">109</span>
-                                    </div>
-                                    <span class="plan-decimals text-left">Per <br>Month</span>
-                                </div>
-                                <div class="plan-button">
-                                    <a href="pricing.html" class="btn btn-medium btn-shop">Purchase</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -1464,16 +1222,16 @@
                         <div class="col-xl-2 col-lg-2 align-self-start text-center text-lg-left animate"
                             data-animation="fadeInUp">
                             <div class="widget widget_nav_menu">
-                                <h3>Services</h3>
+                                <h3>Important Links</h3>
                                 <ul class="menu">
                                     <li class="menu-item">
-                                        <a href="./shop-left.html">Shop</a>
+                                        <a href="#">Home</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="./services2.html">Services</a>
+                                        <a href="#about">About me</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="./service-single.html">Single Service</a>
+                                        <a href="#services">Services</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1482,17 +1240,17 @@
                         <div class="col-xl-2 col-lg-2 align-self-start text-center text-lg-left animate"
                             data-animation="fadeInUp">
                             <div class="widget widget_nav_menu">
-                                <h3>About Me</h3>
+                                <h3 style="visibility: hidden;">menu</h3>
                                 <ul class="menu">
                                     <li class="menu-item">
-                                        <a href="./index_blocks.html">Homeblocks</a>
+                                        <a href="#">Client Reviews</a>
                                     </li>
                                     <li class="menu-item">
-                                        <a href="./about.html">About</a>
+                                        <a href="#Blog">Blog</a>
                                     </li>
-                                    <li class="menu-item">
+                                    <!-- <li class="menu-item">
                                         <a href="./contact.html">Contact Us</a>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
                             <div class="divider-60 divider-lg-0"></div>
@@ -1523,12 +1281,11 @@
                     <div class="row align-items-center">
                         <div class="col-md-12 text-center">
                             <p>&copy; Copyright <span class="copyright_year">2024</span> All Rights Reserved</p>
+                            <!-- <p>Designed & Developed By Mayur</p> -->
                         </div>
                     </div>
                 </div>
             </section>
-
-
         </div>
         <!-- eof #box_wrapper -->
     </div>
