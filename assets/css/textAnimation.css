@@ -8,7 +8,7 @@
 }
 
 .word-wrapper {
-    animation: slideUpContainer 8s linear infinite; /* Keep the animation linear and infinite */
+    animation: slideUpContainer 6s linear infinite forwards alternate; /* Keep the animation linear and infinite */
 }
 
 .word {

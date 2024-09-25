@@ -8,15 +8,29 @@ span.hero-text {
     font-size: 4.5rem;
     font-weight: 800;
     color: #fbff82;
+    text-shadow: 1px 2px 0px #d78585;
 }
 
 @media (max-width: 768px) {
     span.hero-text {
-        margin: 1rem 0;
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
         font-size: 4.5rem;
     }
     .page_topline  .container {
         padding: 1rem 0;
+    }
+
+    .section-home .container {
+        padding: 2rem 0;
+    }
+
+    p.justify {
+        text-align: justify;
+    }
+
+    .address {
+        padding: 0 2rem;
     }
 }
 
