@@ -1,0 +1,66 @@
+.word-slider {
+    position: relative;
+    width: 400px; /* Adjust width based on text length */
+    height: 50px;
+    overflow: hidden;
+}
+
+.word-wrapper {
+    position: absolute; /* Change to absolute for continuous effect */
+    animation: slideUpContainer 8s linear infinite alternate-reverse; /* Adjust duration for smoothness */
+}
+
+.word {
+    display: block;
+    height: 50px;
+    line-height: 50px; /* Align text vertically */
+    font-family: 'Rasa', 'Inter', "roboto";
+    font-size: 2.8rem;
+    text-align: start;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+@keyframes slideUpContainer {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-50px); /* Moves one word up */
+    }
+    30% {
+        transform: translateY(-50px);
+    }
+    40% {
+        transform: translateY(-100px); /* Moves two words up */
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    60% {
+        transform: translateY(-150px); /* Moves three words up */
+    }
+    70% {
+        transform: translateY(-150px);
+    }
+    80% {
+        transform: translateY(-200px); /* Moves four words up */
+    }
+    90% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(-250px); /* Moves five words up */
+    }
+}
+
+/* Duplicate the words for continuous effect */
+.word-wrapper::after {
+    content: attr(data-content); /* Repeats the words */
+    display: block;
+    position: absolute;
+    top: 100%; /* Place it below the first set */
+}

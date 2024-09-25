@@ -8606,7 +8606,7 @@ img {
     right: 0;
     top: 0;
     z-index: 13000;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(25px);
 }
 
 .no-js .preloader,
@@ -8621,7 +8621,7 @@ img {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    filter: drop-shadow(0 0 10px #efce6a);
+    filter: drop-shadow(0 0 15px #efce6a);
     height: 256px;
     left: 50%;
     margin: -128px 0 0 -128px;
@@ -8629,6 +8629,7 @@ img {
     top: 50%;
     width: 256px
 }
+
 
 .animate {
     visibility: hidden
