@@ -9,3 +9,14 @@ span.hero-text {
     font-weight: 800;
     color: #fbff82;
 }
+
+@media (max-width: 768px) {
+    span.hero-text {
+        margin: 1rem 0;
+        font-size: 4.5rem;
+    }
+    .page_topline  .container {
+        padding: 1rem 0;
+    }
+}
+
