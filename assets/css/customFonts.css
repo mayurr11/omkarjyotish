@@ -25,10 +25,20 @@ h3.english-text {
 }
 
 p.gujarati-text{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+a.gujarati-text {
+    font-size: 1.3rem;
+}
 
+span.gujarati-text {
+    font-size: 1.3rem;
+}
+
+span.word.gujarati-text {
+    font-size: 2.8rem;
+}
 
 .gujrati-font {
     font-family: 'Anek Gujarati', 'Inter', "roboto";
