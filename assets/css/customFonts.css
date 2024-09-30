@@ -1,15 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Anek+Gujarati:wght@100..800&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+
+.english-text {
+    font-family: 'Inter', "roboto";
+}
+
+.gujarati-text {
+    font-family: 'Rasa', sans-serif;
+       /* font-size: 1.5rem; */
+}
+
+h3.english-text {
+    font-family: 'Inter', "roboto" ;
+    font-weight: 700;
+    color: #fbff82;
+    text-shadow: 1px 2px 0px #d78585;
+}
+
+.hero-text.gujarati-text {
+    font-weight: 800;
+    color: #fbff82;
+    text-shadow: 1px 2px 0px #d78585;
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
+}
+
+p.gujarati-text{
+    font-size: 1.5rem;
+}
+
+
 
 .gujrati-font {
     font-family: 'Anek Gujarati', 'Inter', "roboto";
 }
 
+/* 
 span.hero-text {
+    font-family: 'Inter', "roboto";
     font-size: 4.5rem;
     font-weight: 800;
     color: #fbff82;
     text-shadow: 1px 2px 0px #d78585;
-}
+} */
+
+
 
 @media (max-width: 768px) {
     span.hero-text {

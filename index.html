@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
 
+
 <head>
     <title>Omkar Jyotish</title>
     <meta charset="utf-8">
@@ -19,6 +20,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/languageToggle.css">
+    <link rel="stylesheet" href="assets/css/gujaratiText.css">
+
+    <script src="https://unpkg.com/i18next/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
+    <script src="assets/js/i18next-config.js" defer></script>
+    <script src="assets/js/translation.js" defer></script>
 </head>
 
 <body>
@@ -34,27 +42,41 @@
             <div class="header_absolute ">
 
                 <!--topline section-->
-                <section class="page_topline ds s-py-30 ">
+                <section id="home" class="page_topline ds s-py-30">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-6 col-lg-4 col-md-4 text-lg-left text-center">
                                 <a href="./" class="logo">
-                                    <img src="assets/imgs/logo.png" alt="img">
+                                    <img src="assets/imgs/logo.png" alt="Logo">
                                 </a>
                             </div>
                             <div
-                                class="col-xl-6 col-lg-8 col-md-8 some-links text-center text-lg-right d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
-                                <a class="fs-24 links-maincolor-hover font-2" href="tel:+918000583939"><mark>+91</mark>
+                                class="col-xl-6 col-lg-9 col-md-8 d-flex justify-content-center justify-content-md-end align-items-center mt-2 mt-md-0">
+                                <a class="fs-24 links-maincolor-hover font-2 me-4" href="tel:+918000583939">
+                                    <!-- Increased margin-right -->
+                                    <mark>+91</mark> 80005 83939
+                                </a>
 
-                                    80005 83939</a>
+                                <div class="language-toggle me-4"> <!-- Increased margin-right -->
+                                    <label class="switch">
+                                        <input type="checkbox" id="languageToggle">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+
+                                <span id="languageLabel" class="mx-2">English</span> <!-- Increased margin-right -->
+
                                 <a href="tel:+918000583939"
-                                    class="btn btn-outline-maincolor btn-medium  d-none d-md-block">
+                                    class="mx-2 btn btn-outline-maincolor btn-medium d-none d-md-block"
+                                    data-i18n="consult">
                                     Consult Now
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </section>
+
                 <!--eof topline-->
 
                 <!-- header  -->
@@ -68,7 +90,7 @@
                                     <nav class="top-nav fw-500">
                                         <ul class="nav sf-menu">
                                             <li class="">
-                                                <a href="#">Home</a>
+                                                <a href="#home">Home</a>
                                             </li>
                                             <li>
                                                 <a href="#about">About me</a>
@@ -114,27 +136,29 @@
                     <div class="divider-50 divider-xl-65"></div>
                     <div class="row align-center">
                         <div class="col-lg-6 col-xl-5 order-lg-1 order-2 text-center text-md-left">
-                            <h3 class="special-heading fw-500 mb-2 color-main2 big-size">
-                                <span class="gujrati-font hero-text">ૐકાર જ્યોતિષ </span>
+                            <h3 class="special-heading fw-500 mb-2 gujrati-font english-text hero-text big-size"
+                                data-i18n="title">
+                                ૐકાર જ્યોતિષ
                             </h3>
                             <p class="special-heading fw-500 text-white fs-50">
                             <div class="word-slider">
                                 <div class="word-wrapper">
-                                    <span class="word">જ્યોતિષ શાસ્ત્ર</span>
-                                    <span class="word">વાસ્તુ શાસ્ત્ર</span>
-                                    <span class="word">ક્રિસ્ટલ થેરેપી</span>
-                                    <span class="word">રુદ્રાક્ષ</span>
-                                    <span class="word">નંગ</span>
-                                    <span class="word">રેઈકી</span>
+                                    <span class="word" data-i18n="service1">જ્યોતિષ શાસ્ત્ર</span>
+                                    <span class="word" data-i18n="service2">વાસ્તુ શાસ્ત્ર</span>
+                                    <span class="word" data-i18n="service3">ક્રિસ્ટલ થેરેપી</span>
+                                    <span class="word" data-i18n="service4">રુદ્રાક્ષ</span>
+                                    <span class="word" data-i18n="service5">નંગ</span>
+                                    <span class="word" data-i18n="service6">રેઈકી</span>
                                 </div>
                             </div>
                             </p>
-                            <p class="fs-20 mt-2 fw-500 address">
-                                Omkar JYotish,15-Aadinath Complex, Jitodia road, Opp. angel school. 388001
+                            <p class="fs-20 mt-2 fw-500 address" data-i18n="address">
+                                Omkar Jyotish, 15-Aadinath Complex, Jitodia road, Opp. angel school. 388001
                             </p>
                             <div class="divider-35 divider-xl-65"></div>
-                            <a href="#about" class="btn btn-maincolor">Let’s Begin</a>
+                            <a href="#about" class="btn btn-maincolor" data-i18n="begin">Let’s Begin</a>
                         </div>
+
                         <div class="col-lg-6 col-xl-7 order-lg-2 order-1 text-center text-lg-right">
                             <img class="horoscope-image" src="assets/images/horoscope.png" alt="img">
                         </div>
@@ -151,19 +175,19 @@
                         </div>
                         <div class="col-lg-6 text-center text-md-left">
                             <div class="divider-60 divider-lg-0 "></div>
-                            <p class="text-white text-center text-md-left fs-20 line-right mb-0">
+                            <p class="text-white text-center text-md-left fs-20 line-right mb-0" data-i18n="about_us">
                                 <span>About Us</span>
                             </p>
-                            <h3 class="special-heading mt-2 fs-60 text-center text-md-left">
+                            <h3 class="special-heading mt-2 fs-60 text-center text-md-left" data-i18n="welcome_message">
                                 <span>Welcome to omkar jyotish</span>
                             </h3>
                             <div class="divider-35"></div>
-                            <p class="justify">
+                            <p class="justify" data-i18n="about_intro">
                                 I am Alpesh K. Bhatt, an esteemed astrologer with a deep-rooted passion for Vedic
                                 astrology. With years of dedicated study and practice, I have come to understand the
                                 profound connection between the cosmos and our everyday lives.
                             </p>
-                            <p class="justify">
+                            <p class="justify" data-i18n="about_services">
                                 At Omkar Jyotish, I harness this knowledge to offer insightful and personalized
                                 astrological consultations that empower individuals to navigate life's challenges and
                                 uncover new opportunities.
@@ -174,19 +198,20 @@
                                         <h2 class="counter counter-size" data-from="0" data-to="15" data-speed="1000">15
                                         </h2>
                                     </div>
-                                    <p class="counter-text ">
-                                        <span class="counter-add">Years Of<br><span
-                                                class="color-dark fw-500">Experience</span></span>
+                                    <p class="counter-text" data-i18n="years_of_experience">
+                                        
                                     </p>
                                 </div>
                             </div>
                             <div class="divider-30 divider-xl-50"></div>
                             <a href="https://wa.me/+918000583939?text=Hello%20Omkar%20Jyotish"
-                                class="btn btn-outline-maincolor btn-medium" target="_blank">Chat with Me</a>
+                                class="btn btn-outline-maincolor btn-medium" target="_blank"
+                                data-i18n="chat_with_me">Chat with Me</a>
                         </div>
                     </div>
                 </div>
             </section>
+
 
             <!--Section Service-->
             <section id="services"
@@ -195,20 +220,21 @@
                     <div class="row">
                         <div class="col-xl-5"></div>
                         <div class="col-xl-3 col-lg-6">
-                            <p class="text-white text-center text-md-left fs-20 line-right mb-0">
+                            <p class="text-white text-center text-md-left fs-20 line-right mb-0" data-i18n="services_label">
                                 <span>Services</span>
                             </p>
-                            <h3 class="special-heading mt-2 fs-60 text-center text-md-left">
+                            <h3 class="special-heading mt-2 fs-60 text-center text-md-left" data-i18n="spiritual_path_heading">
                                 <span>Awaken Your <br> Spiritual Path</span>
                             </h3>
                         </div>
                         <div class="col-xl-3 col-lg-6 text-center text-md-left">
-                            <p class="text-center text-md-left  mt-4 mt-lg-0">
-                                <span>At Omkar Jyotish, we provide spiritual and holistic services to guide your life journey, bringing balance and clarity to your path.</span>
+                            <p class="text-center text-md-left mt-4 mt-lg-0" data-i18n="services_description">
+                                <span>At Omkar Jyotish, we provide spiritual and holistic services to guide your life
+                                    journey, bringing balance and clarity to your path.</span>
                             </p>
                             <div class="divider-35"></div>
-                            <a href="tel:+918000583939" class="btn btn-outline-maincolor btn-medium">Contact Us Now</a>
-                        </div>
+                            <a href="tel:+918000583939" class="btn btn-outline-maincolor btn-medium" data-i18n="contact_us_button">Contact Us Now</a>
+                        </div>                        
                         <div class="col-xl-1"></div>
                         <div class="col-xl-3"></div>
                         <div class="col-xl-9">
@@ -366,24 +392,25 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-5 col-lg-6">
-                            <p class="text-white text-center text-md-left fs-20 line-right mb-0">
+                            <p class="text-white text-center text-md-left fs-20 line-right mb-0" data-i18n="shop_label">
                                 <span>Shop</span>
                             </p>
-                            <h3 class="special-heading mt-2 fs-60 text-center text-md-left">
+                            <h3 class="special-heading mt-2 fs-60 text-center text-md-left" data-i18n="best_products_heading">
                                 <span>Our Best <br>Products</span>
                             </h3>
                         </div>
                         <div class="col-xl-7 col-lg-6 text-center text-md-left">
-                            <p class="mt-4 mt-lg-0">
+                            <p class="mt-4 mt-lg-0" data-i18n="shop_description">
                                 <span>Discover our curated collection of spiritual products designed to enhance your journey.</span>
                             </p>
-                            <p class="mt-4 mt-lg-0">
-                                <span>To purchase this product, call us!</span> 
+                            <p class="mt-4 mt-lg-0" data-i18n="purchase_prompt">
+                                <span>To purchase this product, call us!</span>
                                 <span class="arrow-down">⬇️</span>
                             </p>
                             <div class="divider-35"></div>
-                            <a href="https://wa.me/+918000583939?text=I%20would%20like%20to%20inquire%20about%20your%20products." target="_blank" class="btn btn-outline-maincolor btn-medium">Order Now</a>
-                        </div>
+                            <a href="https://wa.me/+918000583939?text=I%20would%20like%20to%20inquire%20about%20your%20products."
+                                target="_blank" class="btn btn-outline-maincolor btn-medium" data-i18n="order_now_button">Order Now</a>
+                        </div>                        
                         <div class="col-12">
                             <div class="divider-55"></div>
                             <div class="owl-carousel products" data-responsive-lg="4" data-responsive-md="3"
@@ -632,14 +659,13 @@
                     <div class="row">
                         <div class="col-12 text-center">
                             <h3 class="text-center mt-0 mb-2 special-heading fs-60 color-main">
-                                <span>What Clients Are Saying</span>
+                                <span data-i18n="client_testimonials_heading">What Clients Are Saying</span>
                             </h3>
                             <div class="line"></div>
-                            <p class="text-center fs-20 mt-4">
-                                <span>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do
-                                    eiusmod.</span>
+                            <p class="text-center fs-20 mt-4" data-i18n="client_testimonials_subheading">
+                                <span>Discover how our astrological insights have helped individuals find clarity and purpose in their lives.</span>
                             </p>
-
+                            
                             <div class="divider-40 divider-xl-60"></div>
 
                             <div class="owl-carousel quote-carousel owl-navigation" data-responsive-lg="3"
@@ -1082,9 +1108,12 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-12 text-center">
-                            <p>&copy; Copyright <script>document.write(new Date().getFullYear());</script>.</span> All Rights Reserved.</p>
-                            <p>Developed By <a href="#">Mayur Chauhan</a> & <a href="https://wa.me/+918000583939?text=Hello%20Omkar%20Jyotish"
-                            target="_blank">Rahul Mehta</a></p>
+                            <p>&copy; Copyright
+                                <script>document.write(new Date().getFullYear());</script>.</span> All Rights Reserved.
+                            </p>
+                            <p>Developed By <a href="#">Mayur Chauhan</a> & <a
+                                    href="https://wa.me/+918000583939?text=Hello%20Omkar%20Jyotish"
+                                    target="_blank">Rahul Mehta</a></p>
                         </div>
                     </div>
                 </div>
@@ -1097,6 +1126,7 @@
 
     <script src="assets/js/compressed.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </body>
 
