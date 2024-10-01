@@ -38,11 +38,31 @@
 	"reviews": "Client Reviews",
 	"blog": "Blog",
 	"important_links": "Important Links",
-    "additional_links": "Additional Links",
+	"additional_links": "Additional Links",
 	"contact_info": "Contact Info",
 	"copyright": "Copyright",
-    "all_rights_reserved": "All Rights Reserved.",
-    "developed_by": "Developed By",
+	"all_rights_reserved": "All Rights Reserved.",
+	"developed_by": "Developed By",
 	"developer_mayur": "Mayur Chauhan",
-    "developer_rahul": "Rahul Mehta"
+	"developer_rahul": "Rahul Mehta",
+	"service_1_heading": "Kundali Matching",
+	"service_1_description": "Remedies for planetary doshas through tantra-mantra-yantra, birth charts, and kundali matching.",
+
+	"service_2_heading": "Numerology",
+	"service_2_description": "Personal consultations for name corrections and life path guidance.",
+
+	"service_3_heading": "Vastu Shastra",
+	"service_3_description": "Identification and removal of Vastu doshas using crystal pyramid techniques.",
+
+	"service_4_heading": "Reiki Healing",
+	"service_4_description": "Distance and in-person Reiki sessions for physical, mental, and emotional healing.",
+
+	"service_5_heading": "Crystal Therapy",
+	"service_5_description": "Energized crystals like Sphatik Shivling, Kailash Kuber Mala for various astrological remedies.",
+
+	"service_6_heading": "Rituals & Pujas",
+	"service_6_description": "Specialized poojas such as Navchandi, Shatchandi, Gayatri Yagna, and remedies for various doshas.",
+
+	"service_7_heading": "Rudraksha & Sacred Objects",
+	"service_7_description": "Authentic Rudraksha from 1 to 14 Mukhi and sacred objects like Ekakshi Coconut."
 }
