@@ -6,7 +6,7 @@
 }
 
 .gujarati-text {
-    font-family: 'Rasa', sans-serif;
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
        /* font-size: 1.5rem; */
 }
 
@@ -17,16 +17,18 @@ h3.english-text {
     text-shadow: 1px 2px 0px #d78585;
 }
 
+li a.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
+    font-size: 1.2rem;
+}
+
 .hero-text.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
     font-weight: 800;
     color: #fbff82;
     text-shadow: 1px 2px 0px #d78585;
-    font-family: 'Anek Gujarati', 'Inter', "roboto";
 }
 
-p.gujarati-text{
-    font-size: 1.3rem;
-}
 
 a.gujarati-text {
     font-size: 1.3rem;
@@ -44,16 +46,44 @@ span.word.gujarati-text {
     font-family: 'Anek Gujarati', 'Inter', "roboto";
 }
 
-/* 
-span.hero-text {
-    font-family: 'Inter', "roboto";
-    font-size: 4.5rem;
+
+h3.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
     font-weight: 800;
-    color: #fbff82;
-    text-shadow: 1px 2px 0px #d78585;
-} */
+    font-size: 2.5rem;
+}
 
 
+
+h4 a.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
+    font-size: 1.5rem;
+    font-weight: 800,
+}
+
+span p.gujarati-text {
+    font-family:  'Anek Gujarati','Rasa', sans-serif;
+    font-size: 1.3rem;
+}
+
+h3 span.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+
+
+#about_title.gujarati-text{
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+
+p.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', "roboto";
+    font-size: 1.3rem;
+}
 
 @media (max-width: 768px) {
     span.hero-text {
