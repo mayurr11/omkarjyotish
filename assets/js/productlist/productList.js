@@ -95,7 +95,7 @@ import { products } from './productsData.js';
 const productList = document.getElementById('product-list');
 
 // Replace with your desired WhatsApp number
-const whatsappNumber = 'YOUR_WHATSAPP_NUMBER';
+const whatsappNumber = '+918000583939';
 
 // Function to create product element
 function createProductElement(product) {
