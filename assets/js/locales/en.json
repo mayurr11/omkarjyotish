@@ -11,10 +11,10 @@
 	"service6": "Reiki",
 	"address": "Omkar Jyotish, 15-Aadinath Complex, Jitodia road, Opp. angel school. 388001",
 	"begin": "Let’s Begin",
-	"about_us": "About Us",
-	"welcome_message": "Welcome to omkar jyotish",
-	"about_intro": "I am Alpesh K. Bhatt, an esteemed astrologer with a deep-rooted passion for Vedic astrology. With years of dedicated study and practice, I have come to understand the profound connection between the cosmos and our everyday lives.",
-	"about_services": "At Omkar Jyotish, I harness this knowledge to offer insightful and personalized astrological consultations that empower individuals to navigate life's challenges and uncover new opportunities.",
+	"about_us": "About Me",
+	"welcome_message": "Welcome to Omkar Jyotish! I’m Alpesh K. Bhatt, an astrology consultant based in Anand.",
+	"about_intro": "I inherited my knowledge of astrology from my grandfather and began learning at a young age. Through astrology, good deeds can transform fate.",
+	"about_services": "My interests include Astrology, Vastu Shastra, Numerology, Mantras, Tantra, Reiki, and Crystal Therapy. For 11 years, I’ve been teaching astrology for free through 'Sai Jyotish Gyanpeeth.'",
 	"years_of_experience": "Years Of Experience",
 	"chat_with_me": "Chat with Me",
 	"services_label": "Services",
@@ -86,14 +86,11 @@
 	"blog_post_6_excerpt": "Learn why milk should be offered to Lord Shiva in Shravan.",
 
 	"quote_name_1": "kandarp Thakar",
-    "quote_text_1": "Omkar Jyotish is one of the best astrologers in Anand district. Thank you Alpesh Bhatt ji for your guidance and support.",
+	"quote_text_1": "Omkar Jyotish is one of the best astrologers in Anand district. Thank you Alpesh Bhatt ji for your guidance and support.",
 
 	"quote_name_2": "Rajen Bhatt",
-    "quote_text_2": "It is highly advisable to meet for an exact and scriptural solution.",
+	"quote_text_2": "It is highly advisable to meet for an exact and scriptural solution.",
 
 	"quote_name_3": "Pradhumansinh",
-    "quote_text_3": "Best astrologer in Anand with great Vastu knowledge. His simple solutions and advice worked wonders for me. Thank you for your care and patience over the past seven years."
-
-
-
+	"quote_text_3": "Best astrologer in Anand with great Vastu knowledge. His simple solutions and advice worked wonders for me. Thank you for your care and patience over the past seven years."
 }
