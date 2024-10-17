@@ -11,10 +11,14 @@
 	"service6": "Reiki",
 	"address": "Omkar Jyotish, 15-Aadinath Complex, Jitodia road, Opp. angel school. 388001",
 	"begin": "Let’s Begin",
-	"about_us": "About Me",
-	"welcome_message": "Welcome to Omkar Jyotish! I’m Alpesh K. Bhatt, an astrology consultant based in Anand.",
-	"about_intro": "I inherited my knowledge of astrology from my grandfather and began learning at a young age. Through astrology, good deeds can transform fate.",
-	"about_services": "My interests include Astrology, Vastu Shastra, Numerology, Mantras, Tantra, Reiki, and Crystal Therapy. For 11 years, I’ve been teaching astrology for free through 'Sai Jyotish Gyanpeeth.'",
+	"about_us": "About Us",
+	"welcome_message": "Welcome to Omkar Jyotish",
+	"about_intro": "Mantra, pilgrimage, Brahmin, deity, astrologer, medicine, and guru... one attains success based on the feelings they have towards these.",
+	"about_intro_meaning": "Meaning: Success is attained based on one's devotion to mantra, pilgrimage, Brahmin, deity, astrologer, medicine, and guru.",
+	"about_philosophy": "Astrology doesn't change fate, but it shows the path of karma. Good karma can change fate, without a doubt.",
+	"about_intro_personal": "Har Har Mahadev! I am Alpesh K. Bhatt, an astrologer based in Anand. I inherited astrology knowledge from my grandfather and started learning at a young age.",
+	"about_services": "Apart from astrology consultations, I provide guidance in Vastu Shastra, Numerology, Mantras, Tantra, Reiki, Crystal Therapy, and spirituality. I have been teaching astrology for free for 11 years through the 'Sai Jyotish Gyanpeeth' institution in Anand.",
+	"about_thoughts": "Astrology is a vast ocean of knowledge. Every day I learn something new, and I continue to share my insights through articles. I hope you will enjoy my writings.",
 	"years_of_experience": "Years Of Experience",
 	"chat_with_me": "Chat with Me",
 	"services_label": "Services",
@@ -92,5 +96,20 @@
 	"quote_text_2": "It is highly advisable to meet for an exact and scriptural solution.",
 
 	"quote_name_3": "Pradhumansinh",
-	"quote_text_3": "Best astrologer in Anand with great Vastu knowledge. His simple solutions and advice worked wonders for me. Thank you for your care and patience over the past seven years."
+	"quote_text_3": "Best astrologer in Anand with great Vastu knowledge. His simple solutions and advice worked wonders for me. Thank you for your care and patience over the past seven years.",
+
+	"contact": "Contact Me",
+	
+    "contact_form_title": "Contact Form",
+    "contact_form_name": "Full Name",
+    "contact_form_name_placeholder": "Name",
+    "contact_form_email": "Email address",
+    "contact_form_email_placeholder": "Email",
+    "contact_form_phone": "Phone",
+    "contact_form_phone_placeholder": "Phone",
+    "contact_form_subject": "Subject",
+    "contact_form_subject_placeholder": "Subject",
+    "contact_form_message": "Message",
+    "contact_form_message_placeholder": "Message",
+    "contact_form_submit": "Send"
 }

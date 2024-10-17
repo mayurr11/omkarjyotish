@@ -35,9 +35,9 @@ function createProductElement(product, index) {
         </div>
         <div class="price-wrap">
           <span class="price">
-            <span><span>$</span>${product.price}</span>
+            <span><span>₹</span>${product.price}</span>
           </span>
-          <a href="${whatsappLink}" class="button product_type_simple buy_button" target="_blank" rel="noopener noreferrer">
+          <a href="${whatsappLink}" class="button product_type_simple buy_button mb-4 w-100" target="_blank" rel="noopener noreferrer">
             Buy
           </a>
         </div>
