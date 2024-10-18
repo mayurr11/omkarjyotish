@@ -11,7 +11,6 @@ export function createProductElement(product, index) {
     return `
         <li class="product">
             <div class="product-inner">
-                ${product.onSale ? '<span class="onsale">Sale!</span>' : ''}
                 <a href="#">
                     <img src="${index < 4 ? product.imgSrc : ''}" data-src="${index >= 4 ? product.imgSrc : ''}" alt="${product.title}" class="${index >= 4 ? 'lazyload' : ''}">
                 </a>
@@ -19,14 +18,14 @@ export function createProductElement(product, index) {
                     <h2 class="woocommerce-loop-product__title">
                         <a href="#">${product.title}</a>
                     </h2>
-                    <div class="product_meta">
+                    <!--<div class="product_meta">
                         <span class="posted_in">Categories: 
                             ${product.category.map(cat => `<a href="#">${cat}</a>`).join(', ')}
                         </span>
                     </div>
                     <div class="star-rating">
                         <span style="width:${product.rating * 20}%">Rated <strong class="rating">${product.rating}</strong> out of 5</span>
-                    </div>
+                    </div>-->
                     <div class="price-wrap">
                         <span class="price">
                             <span>
