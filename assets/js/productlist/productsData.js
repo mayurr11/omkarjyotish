@@ -7,3 +7,4 @@ export const products = Array.from({ length: 46 }, (_, i) => ({
   price: `${(Math.random() * 100).toFixed(2)}`, // Random price for each product
   // onSale: Math.random() > 0.5, // Randomly decide if it's on sale
 }));
+
