@@ -83,6 +83,7 @@
     <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
     <script src="/assets/js/i18next-config.js" defer></script>
     <script src="/assets/js/translation.js" defer></script>
+
 </head>
 
 <body>
@@ -183,14 +184,143 @@
                     <span class="toggle_menu"><span></span></span>
                 </header>
             </div>
+
+            <section class="ds woocommerce s-py-90 s-py-xl-150 c-gutter-60">
+                <div class="container">
+                    <div class="row">
+                        <main class="col-lg-12 order-lg-2">
+                            <div class="">
+                                <div class="products-selection">
+                                    <p class="woocommerce-result-count">
+                                        Showing all results
+                                    </p>
+                                    <!-- <form class="woocommerce-ordering" method="get">
+                                        <div class="select_container">
+                                            <div class="select-wrap">
+                                                <select name="orderby" class="orderby">
+                                                    <option value="menu_order" selected="selected">Default sorting</option>
+                                                    <option value="popularity">Sort by popularity</option>
+                                                    <option value="rating">Sort by average rating</option>
+                                                    <option value="date">Sort by newness</option>
+                                                    <option value="price">Sort by price: low to high</option>
+                                                    <option value="price-desc">Sort by price: high to low</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form> -->
+                                </div>
+            
+                                <!-- Product list container -->
+                                <ul class="products columns-3">
+                                    <!-- Products will be dynamically injected here by JS -->
+                                </ul>
+                            </div>
+            
+                            <!-- Pagination -->
+                            <nav class="woocommerce-pagination">
+                                <ul class="page-numbers">
+                                    <!-- Pagination links will be dynamically injected here by JS -->
+                                </ul>
+                            </nav>
+                        </main>
+                    </div>
+                </div>
+            </section>
+            <footer class="page_footer ds ms s-py-90 s-pb-lg-60 s-pt-xl-150 s-pb-xl-120">
+                <div class="container">
+                    <div class="row align-center">
+                        <div class="col-xl-5 col-lg-5 text-center text-lg-left animate" data-animation="fadeInUp">
+                            <a href="./" class="logo">
+                                <img src="/assets/imgs/logo.png" alt="img">
+                                <!-- <span class="logo-text color-darkgrey">vedi</span> -->
+                            </a>
+                            <div class="divider-60 divider-lg-0"></div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 align-self-start text-center text-lg-left animate"
+                            data-animation="fadeInUp">
+                            <div class="widget widget_nav_menu">
+                                <h3 data-i18n="important_links">Important Links</h3>
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="/" data-i18n="home">Home</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./#about" data-i18n="about">About me</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./#services" data-i18n="services">Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="divider-60 divider-lg-0"></div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 align-self-start text-center text-lg-left animate"
+                            data-animation="fadeInUp">
+                            <div class="widget widget_nav_menu">
+                                <h3 data-i18n="additional_links">Additional Links</h3>
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="./#client-reviews" data-i18n="reviews">Client Reviews</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./#blog" data-i18n="blog">Blog</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="./#contact" data-i18n="contact">Contact me</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="divider-60 divider-lg-0"></div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 align-self-start text-center text-lg-left animate"
+                            data-animation="fadeInUp">
+                            <div class="widget widget_text">
+                                <h3 data-i18n="contact_info">Contact Info</h3>
+                                <p data-i18n="address">
+                                    Omkar Jyotish, 15-Aadinath Complex, Jitodia Road, Opp. Angel School. 388001
+                                </p>
+                                <span class="social-icons">
+                                    <a href="https://www.facebook.com/people/Omkar-JYotish/61565695981543/"
+                                        class="fa fa-facebook" target="_blank" title="facebook"></a>
+                                    <a href="https://www.threads.net/@omkarjyotish555" class="fa-brands fa-threads"
+                                        target="_blank" title="twitter"></a>
+                                    <a href="https://www.instagram.com/omkarjyotish555" class="fa fa-instagram"
+                                        target="_blank" title="instagram"></a>
+                                    <a href="https://wa.me/+918000583939" class="fa fa-whatsapp" target="_blank"
+                                        title="youtube"></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <section class="page_copyright ds ms s-py-25 s-bordertop-container">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-12 text-center">
+                            <p>&copy; <span data-i18n="copyright">Copyright</span>
+                                <script>document.write(new Date().getFullYear());</script>.
+                                <span data-i18n="all_rights_reserved">All Rights Reserved.</span>
+                            </p>
+                            <p>
+                                <span data-i18n="developed_by">Developed By</span>
+                                <a href="https://www.mayurportfolio.tech/" target="_blank"
+                                    data-i18n="developer_mayur">Mayur Chauhan</a> &
+                                <a href="https://wa.me/+919428162471?text=Hello%20Rahul%20Mehta" target="_blank"
+                                    data-i18n="developer_rahul">Rahul Mehta</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
         </div>
     </div>
     </div>
     <script src="/assets/js/compressed.js"></script>
     <script src="/assets/js/main.js"></script>
-    <!-- <script src="assets/js/productlist/productList.js"></script> -->
-    <!-- <script src="assets/js/productlist/productsData.js"></script> -->
-    <script type="module" src="/assets/js/productlist/productList.js"></script>
+    <script type="module" src="./pagination.js"></script>
+    <script type="module" src="./renderProducts.js"></script>
 
 </body>
 

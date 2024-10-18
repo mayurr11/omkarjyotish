@@ -8,7 +8,7 @@ i18next
         fallbackLng: 'en', // Fallback language if the current language does not have the translation
         debug: true,
         backend: {
-            loadPath: 'assets/js/locales/{{lng}}.json' // Path to the translation files
+            loadPath: '../assets/js/locales/{{lng}}.json' // Path to the translation files
         }
     }, (err, t) => {
         if (err) {
