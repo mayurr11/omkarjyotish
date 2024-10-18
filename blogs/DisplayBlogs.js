@@ -40,6 +40,8 @@ function displayPosts() {
         const postDiv = document.createElement('div');
         postDiv.classList.add('post', 'theme-card-class'); // Replace 'theme-card-class' with your theme's card class
 
+        const formattedDate = formatDate(new Date(post.published)); // Format the date
+
         postDiv.innerHTML = `
             <div class="item-content">
                 <header class="entry-header">
@@ -47,7 +49,7 @@ function displayPosts() {
                         <a href="${post.link}" target="_blank">${post.title}</a>
                     </h2>
                     <div class="entry-meta gujarati-text">
-                        <span>Published on: ${new Date(post.published).toLocaleDateString()}</span>
+                        <span>Published on: ${formattedDate}</span>
                     </div>
                 </header>
                 <div class="entry-content">
@@ -92,6 +94,14 @@ function createPagination() {
 
     paginationDiv.appendChild(ul);
     document.getElementById('blog-posts').appendChild(paginationDiv);
+}
+
+// Function to format date into dd/mm/yyyy
+function formatDate(date) {
+    const day = String(date.getDate()).padStart(2, '0');
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are zero-indexed
+    const year = date.getFullYear();
+    return `${day}/${month}/${year}`;
 }
 
 // Fetch blog posts on page load
