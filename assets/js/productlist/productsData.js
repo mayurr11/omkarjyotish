@@ -3,7 +3,7 @@ export const products = [
   {
 		"imgSrc": "/assets/images/products/1.jpg",
 		"title": "Product 1",
-		"category": ["Magic", "Attributes"],
+    "category": ["Magic", "Attributes"],
 		"rating": 4.2,
 		"price": "20.99",
 		"onSale": true

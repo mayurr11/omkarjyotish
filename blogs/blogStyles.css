@@ -1,0 +1,96 @@
+/* Base font styling */
+.gujarati-text {
+    font-family: 'Anek Gujarati', 'Inter', 'Roboto', sans-serif;
+    font-size: 16px; /* Default font size */
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Title styles */
+h2.gujarati-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00; /* Vibrant color for titles */
+    margin-bottom: 10px;
+}
+
+/* Meta information (publish date) */
+.entry-meta.gujarati-text {
+    font-size: 14px;
+    color: #cccccc; /* Lighter color for meta */
+    margin-bottom: 15px; /* Space between meta and content */
+}
+
+/* Post container styling */
+.post {
+    border: none; /* Removed border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #1a1a2e; /* Darker background for contrast */
+    color: #ffffff; /* White text for better visibility */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Softer shadow for better depth */
+    transition: transform 0.3s ease-in-out; /* Smooth animation */
+}
+
+/* Hover effect for posts */
+.post:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+/* Image styling */
+.item-media img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space between image and content */
+}
+
+/* Title in post */
+.entry-header h2 {
+    font-size: 22px; /* Larger font for better readability */
+    margin: 0 0 10px; /* More consistent spacing */
+    text-transform: capitalize; /* Title case for uniformity */
+}
+
+/* Meta information */
+.entry-meta {
+    font-size: 14px;
+    color: #999999; /* Subtle contrast for meta */
+}
+
+/* Pagination styles */
+.woocommerce-pagination .page-numbers {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.woocommerce-pagination .page-numbers li {
+    margin: 0 5px;
+}
+
+.woocommerce-pagination .page-numbers a {
+    color: #ffcc00; /* Matches title color */
+    background-color: #1a1a2e; /* Matches post background */
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Button shadow */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Active page style */
+.woocommerce-pagination .page-numbers .current {
+    background-color: #ca416e; /* Highlight active page */
+    color: #1a1a2e;
+    font-weight: bold;
+}
+
+/* Hover effect on pagination */
+.woocommerce-pagination .page-numbers a:hover {
+    background-color: #ca416e;
+    color: #1a1a2e;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
