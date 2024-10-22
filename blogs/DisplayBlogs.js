@@ -11,7 +11,7 @@ async function fetchBlogPosts() {
     document.body.appendChild(script);
 }
 
-// Function to handle the fetched blog posts
+// Function to handle the fetched blog postint s
 function handleBlogPosts(data) {
     const entries = data.feed.entry;
     allPosts = entries.map(entry => ({

@@ -6,7 +6,7 @@
 }
 
 .gujarati-text {
-    font-family: 'Anek Gujarati', 'Inter', "roboto";
+    font-family: 'Anek Gujarati', 'Inter', "roboto" !important;
        /* font-size: 1.5rem; */
 }
 

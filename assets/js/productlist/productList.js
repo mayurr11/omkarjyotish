@@ -23,15 +23,11 @@ function createProductElement(product, index) {
     <div class="product-inner">
       ${imgElement}
       <div class="product-wrap">
-        <h2 class="woocommerce-loop-product__title">${product.title}</h2>
-        <div class="product_meta">
-          <span class="posted_in">Categories: 
-            ${product.category.map(cat => `<span>${cat}</span>`).join(', ')}
-          </span>
-        </div>
+        <h2 class="woocommerce-loop-product__title gujarati-text">${product.title}</h2>
+        
         <div class="price-wrap">
-          <span class="price">
-            <span><span>₹</span>${product.price}</span>
+          <span class="price gujarati-text">
+            <span><span>₹ </span>${product.price}</span>
           </span>
           <a href="${whatsappLink}" class="button product_type_simple buy_button mb-4 w-100" target="_blank" rel="noopener noreferrer">
             Buy

@@ -5,6 +5,7 @@
     line-height: 1.6; /* Improved readability */
 }
 
+
 /* Title styles */
 h2.gujarati-text {
     font-size: 24px;
@@ -94,3 +95,14 @@ h2.gujarati-text {
     color: #1a1a2e;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
 }
+
+p.gujarati-text, p b, p span, p b span {
+    color: #ffffff;
+    font-family: 'Anek Gujarati', 'Inter', 'Roboto', sans-serif;
+}
+ 
+p.gujarati-text b span, p b span, h2 b span {
+    color: #ffffff !important;
+    font-family: 'Anek Gujarati', 'Inter', 'Roboto', sans-serif;
+}
+

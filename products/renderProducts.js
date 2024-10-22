@@ -15,21 +15,13 @@ export function createProductElement(product, index) {
                     <img src="${index < 4 ? product.imgSrc : ''}" data-src="${index >= 4 ? product.imgSrc : ''}" alt="${product.title}" class="${index >= 4 ? 'lazyload' : ''}">
                 </a>
                 <div class="product-wrap">
-                    <h2 class="woocommerce-loop-product__title">
+                    <h2 class="woocommerce-loop-product__title gujarati-text">
                         <a href="#">${product.title}</a>
                     </h2>
-                    <!--<div class="product_meta">
-                        <span class="posted_in">Categories: 
-                            ${product.category.map(cat => `<a href="#">${cat}</a>`).join(', ')}
-                        </span>
-                    </div>
-                    <div class="star-rating">
-                        <span style="width:${product.rating * 20}%">Rated <strong class="rating">${product.rating}</strong> out of 5</span>
-                    </div>-->
                     <div class="price-wrap">
-                        <span class="price">
+                        <span class="price gujarati-text">
                             <span>
-                                <span>₹</span>${product.price}
+                                <span>₹ </span>${product.price}
                             </span>
                         </span>
                         <a href="${whatsappLink}" class="button product_type_simple buy_button mb-4 w-100" target="_blank" rel="noopener noreferrer">
